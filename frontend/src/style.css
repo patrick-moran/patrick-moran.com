@@ -1,4 +1,11 @@
 body {
-    margin: 0;
+    margin: 20%
 
-    
+}
+h1 {
+    color: whitesmoke;
+
+    background-color: black;
+
+    p.outset {border-style: outset;}
+}
