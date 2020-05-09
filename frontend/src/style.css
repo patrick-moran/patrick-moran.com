@@ -12,6 +12,7 @@ h1 {
     font-weight: bold;
     color: whitesmoke;
     font-size: 50px;
+    text-transform: capitalize;
 
     background-color: black;
 
