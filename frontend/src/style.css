@@ -59,10 +59,22 @@ font-family: 'Courier New', Courier, monospace;
 font-size: 35px;
 line-height: 100%;
 padding-right: 10%;
-
-
-
 }
 
-    
+
+div.zoo {
+
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}   
+
+
+a {
+    color: tomato;
+    font-size: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+
+}
   
