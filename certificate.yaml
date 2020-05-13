@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1alpha2
+kind: Certificate
+metadata:
+  name: valley-cert
+spec:
+  secretName: valley-cert
+  issuerRef:
+    name: letsencrypt
+    kind: ClusterIssuer
+  commonName: patrick-moran.com
+  dnsNames:
+  - patrick-moran.com
+  - '*.patrick-moran.com'

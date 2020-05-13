@@ -1,0 +1,32 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: valley
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
+    kubernetes.io/ingress.class: nginx
+    certmanager.k8s.io/cluster-issuer: letsencrypt
+    kubernetes.io/tls-acme: "true"
+spec:
+  rules:
+  - host: patrick-moran.com
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: valley
+          servicePort: 80
+  - host: api.patrick-moran.com
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: valley
+          servicePort: 5000
+  tls:
+  - secretName: valley-cert
+    hosts:
+    - patrick-moran.com
+    - api.patrick-moran.com
