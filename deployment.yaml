@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: valley
+  labels:
+    app: valley
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: valley
+  template:
+    metadata:
+      labels:
+        app: valley
+    spec:
+      containers:
+        - name: frontend
+          image: kristianwindsor/valley-frontend
+          ports:
+            - containerPort: 80
+        - name: backend
+          image: kristianwindsor/valley-backend
+          ports:
+            - containerPort: 5000
