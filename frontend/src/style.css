@@ -78,3 +78,9 @@ a {
 
 }
   
+.bordered {
+    border-width: 5px;
+    border-color: black;
+    image-orientation: flip;
+    
+}
