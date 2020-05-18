@@ -21,7 +21,7 @@ h1 {
     font: bold;
     border-top: 0px;
 }
-
+/* Most text on here*/
 .paragraph {
     border: 3px solid black;
     padding-left: 10%;
@@ -31,11 +31,11 @@ h1 {
     font-size: 15px;
     line-height: 200%;
 }
-
+/* Inbetween different pieces*/
 div {
     border: 1px thick black;
 }
-
+/* Photos on the article*/
 img{
     display:block;
     width:100%; height:100%;
@@ -62,4 +62,12 @@ a {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
 }
+
+::selection {
+    background: #ffb7b7; /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background: #ffb7b7; /* Gecko Browsers */
+  }
+
 
