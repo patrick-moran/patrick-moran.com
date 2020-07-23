@@ -7,6 +7,17 @@ body {
     background-color: whitesmoke;
     font-family: 'Courier New', Courier, monospace
 }
+
+/* Nightmode colors */
+.nightmode {
+    background-color: #243447;
+    
+    a [ 
+
+}
+
+
+
 /* Title of the website - don't change*/
 h1 {
     margin: 0;
