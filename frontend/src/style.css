@@ -60,6 +60,14 @@ h2 {
     line-height: 100%;
     padding-right: 10%;
     }
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: center;
+    
+
+}
 
 div.zoo {
     text-align: center;
