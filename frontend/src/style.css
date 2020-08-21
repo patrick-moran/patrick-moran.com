@@ -46,6 +46,18 @@ h1 {
 div {
     border: 1px thick black;
 }
+
+div.p {
+    border: 3px solid black;
+    padding-left: 10%;
+    padding-right: 35%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 15px;
+    line-height: 200%;
+    text-align: center;
+}
+
 /* Photos on the article*/
 img{
     display:block;
