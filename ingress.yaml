@@ -18,15 +18,7 @@ spec:
         backend:
           serviceName: valley
           servicePort: 80
-  - host: api.patrick-moran.com
-    http:
-      paths:
-      - path: /
-        backend:
-          serviceName: valley
-          servicePort: 5000
   tls:
   - secretName: valley-cert
     hosts:
     - patrick-moran.com
-    - api.patrick-moran.com
