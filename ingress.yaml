@@ -1,7 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: valley
+  name: patrickmoran
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
     nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
@@ -16,9 +16,9 @@ spec:
       paths:
       - path: /
         backend:
-          serviceName: valley
+          serviceName: patrickmoran
           servicePort: 80
   tls:
-  - secretName: valley-cert
+  - secretName: patrickmoran-cert
     hosts:
     - patrick-moran.com

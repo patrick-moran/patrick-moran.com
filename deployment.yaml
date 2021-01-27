@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: valley
+  name: patrickmoran
   labels:
-    app: valley
+    app: patrickmoran
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: valley
+      app: patrickmoran
   template:
     metadata:
       labels:
-        app: valley
+        app: patrickmoran
     spec:
       containers:
         - name: frontend
-          image: kristianwindsor/valley-frontend
+          image: kristianwindsor/patrickmoran
           ports:
             - containerPort: 80
