@@ -11,7 +11,7 @@ metadata:
     kubernetes.io/tls-acme: "true"
 spec:
   rules:
-  - host: patrick-moran.com
+  - host: blog.patrick-moran.com
     http:
       paths:
       - path: /
@@ -22,3 +22,4 @@ spec:
   - secretName: patrickmoran-cert
     hosts:
     - patrick-moran.com
+    - '*.patrick-moran.com'
